@@ -1,0 +1,94 @@
+body{
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    flex-direction: column;
+}
+
+nav {
+    height:60px;
+    background-color: rgb(15, 107, 107);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconHome{
+    cursor: pointer;
+}
+
+aside{
+    width: 25%;
+    height: calc(100vh - 150px - 60px);
+    float: left;
+    overflow: scroll;
+    margin-left: -40px;
+}
+
+main{
+    width: 75%;
+    height: 400px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.divImages{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+    margin-top: 50px;
+    object-position: center;
+}
+
+.divImage{
+    width: 30%;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.divImage img{
+    width:100%;
+    height:100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+aside ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 20px;
+    list-style: none;
+}
+
+aside ul li:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.buttonContainer{
+    width: 75%;
+    display: flex;
+    float:left;
+    align-items: center;
+    justify-content: center;
+}
