@@ -25,6 +25,7 @@ nav {
 
 .iconHome{
     cursor: pointer;
+    padding-top:7px;
 }
 
 aside{
@@ -54,6 +55,7 @@ main{
     align-content: space-between;
     margin-top: 50px;
     object-position: center;
+    
 }
 
 .divImage{
@@ -91,4 +93,10 @@ aside ul li:hover{
     float:left;
     align-items: center;
     justify-content: center;
+}
+
+#renderImages{
+    font-size: 30px;
+    background-color: teal;
+    cursor: pointer;
 }

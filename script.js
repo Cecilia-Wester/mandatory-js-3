@@ -3,6 +3,8 @@ const headerText = document.querySelector('header h1');
 const renderImagesBtn = document.querySelector('#renderImages');
 const main = document.querySelector('main');
 
+
+
 //Hämtar hundlistan
 function fetchDogs(){
     axios.get(`${BASE_URL}breeds/list/all`)
@@ -70,9 +72,11 @@ function renderDogImages(){
         if (splitted.length === 2) {
             let breed = splitted[0];
             let subBreed = splitted[1];
+            headerText.textContent = `${breed} - ${subBreed}`
             fetchSubBreedImages(breed,subBreed)
         } else {
             let breed = splitted[0];
+            headerText.textContent = `${breed}`
             fetchBreedImage(breed);
         }
     } else {
